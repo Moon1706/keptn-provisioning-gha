@@ -1,0 +1,21 @@
+name: "Keptn provisioning"
+description: "Create or update projects, stages, and services of Keptn tool."
+author: "Moon1706"
+inputs:
+  config:
+    description: "Config of desired projects/stages/services."
+    required: true
+  keptn-auth:
+    description: "Auth settings for Keptn connection. Ignore when use 'keptn-kube'"
+    required: true
+    default: '{"keptnURL": "", "token": ""}'
+  keptn-kube:
+    description: "Kubernetes settings for connection to Keptn service."
+    required: true
+    default: '{"enabled": false, "namespace": "keptn", "secret": "keptn-api-token", "service": "api-gateway-nginx"}'
+branding:
+  icon: "terminal"
+  color: "purple"
+runs:
+  using: "node16"
+  main: "dist/index.js"

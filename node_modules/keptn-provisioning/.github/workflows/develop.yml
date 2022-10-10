@@ -1,0 +1,28 @@
+name: develop
+
+on:
+  pull_request:
+    branches: [develop]
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+  push:
+    branches: [develop]
+    paths-ignore:
+      - "README.md"
+      - "LICENSE"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Install NPM requirements"
+        run: npm install
+      - name: "Lint"
+        run: npm run lint
+      - name: "Build module"
+        run: tsc
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
