@@ -5,7 +5,7 @@ Keptn Provisioning
 
 ![License](https://img.shields.io/github/license/Moon1706/keptn-provisioning-gha)
 
-This repository contains the GitHub Actions, which create and update [Keptn](https://keptn.sh/) projects/stages/services.
+This repository contains the GitHub Actions, which create a Github repository and create/update [Keptn](https://keptn.sh/) projects/stages/services.
 
 Inputs
 ------
