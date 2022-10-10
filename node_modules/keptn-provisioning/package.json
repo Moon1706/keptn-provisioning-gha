@@ -1,0 +1,50 @@
+{
+  "name": "keptn-provisioning",
+  "version": "1.1.0",
+  "license": "Apache License 2.0",
+  "author": "Mikita Sharayeu <nick.moon.1705@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moon1706/keptn-provisioning-npm.git"
+  },
+  "description": "This module used for provisioning projects, stages, and services of Keptn tool.",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "default": "npm run clean && npm install && npm run fmt && npm run lint && npm run build",
+    "clean": "rm -rf node_modules dist",
+    "fmt": "prettier --write .",
+    "lint": "npx eslint .",
+    "build": "tsc"
+  },
+  "keywords": [
+    "keptn",
+    "typescript"
+  ],
+  "dependencies": {
+    "@kubernetes/client-node": "^0.17.0",
+    "@octokit/request-error": "^3.0.1",
+    "@octokit/rest": "^19.0.4",
+    "@types/glob": "^8.0.0",
+    "@types/node-fetch": "^2.6.2",
+    "@types/tar": "^6.1.2",
+    "@types/ws": "^8.5.3",
+    "glob": "^8.0.3",
+    "js-base64": "^3.7.2",
+    "js-yaml": "^4.1.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  },
+  "bugs": {
+    "url": "https://github.com/Moon1706/keptn-provisioning-npm/issues"
+  },
+  "homepage": "https://github.com/Moon1706/keptn-provisioning-npm#readme"
+}
