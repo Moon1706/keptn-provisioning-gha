@@ -118,9 +118,9 @@ jobs:
         uses: Moon1706/keptn-provisioning@v1
         with:
           keptn-kube: |
-            enabled: true,
-            namespace: "keptn",
-            secret: "keptn-api-token",
+            enabled: true
+            namespace: "keptn"
+            secret: "keptn-api-token"
             service: "api-gateway-nginx"
           config: |
             projects: 
