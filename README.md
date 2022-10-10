@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: "Keptn provisioning"
-        uses: Moon1706/keptn-provisioning@v1
+        uses: Moon1706/keptn-provisioning-gha@v1
         with:
           keptn-auth: |
             keptnURL: "keptn.test.com"
@@ -65,7 +65,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: "Keptn provisioning"
-        uses: Moon1706/keptn-provisioning@v1
+        uses: Moon1706/keptn-provisioning-gha@v1
         with:
           keptn-auth: |
             keptnURL: "keptn.test.com"
@@ -115,7 +115,7 @@ jobs:
           project_id: keptn-test
 
       - name: "Keptn provisioning"
-        uses: Moon1706/keptn-provisioning@v1
+        uses: Moon1706/keptn-provisioning-gha@v1
         with:
           keptn-kube: |
             enabled: true
