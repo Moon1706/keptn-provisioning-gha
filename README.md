@@ -26,7 +26,7 @@ Usage
 Workflows
 ---------
 
-Full flow:
+Standard flow:
 
 ```yaml
 jobs:
