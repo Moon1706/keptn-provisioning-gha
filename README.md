@@ -19,6 +19,13 @@ Inputs
 Usage
 -----
 
+1. Make `shipyard.yaml`. [Official docs](https://keptn.sh/docs/0.8.x/manage/shipyard/) for helping.
+2. Make folder with service files (optional).
+3. Create workflow.
+
+Workflows
+---------
+
 Full flow:
 
 ```yaml
