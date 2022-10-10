@@ -1,24 +1,23 @@
 ![keptn](https://github.com/keptn/keptn/raw/master/assets/keptn.png)
 
-# Keptn Provisioning
+Keptn Provisioning
+==================
 
-![Release](https://img.shields.io/github/v/release/Moon1706/keptn-provisioning-gha)
-![License](https://img.shields.io/github/license/Moon1706/keptn-provisioning-gha)
+![Release](https://img.shields.io/github/v/release/Moon1706/keptn-provisioning-gha) ![License](https://img.shields.io/github/license/Moon1706/keptn-provisioning-gha)
 
 This repository contains the GitHub Actions, which create and update [Keptn](https://keptn.sh/) projects/stages/services.
 
-<!-- action-docs-inputs -->
-## Inputs
+Inputs
+------
 
-| parameter | description | required | default |
-| - | - | - | - |
-| config | Config of desired projects/stages/services. | `true` |  |
-| keptn-auth | Auth settings for Keptn connection. Ignore when use 'keptn-kube' | `true` | {"keptnURL": "", "token": ""} |
-| keptn-kube | Kubernetes settings for connection to Keptn service. | `true` | {"enabled": false, "namespace": "keptn", "secret": "keptn-api-token", "service": "api-gateway-nginx"} |
+| parameter  | description                                                      | required | default                                                                                                   |
+|------------|------------------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
+| config     | Config of desired projects/stages/services.                      | `true`   | `""`                                                                                                      |
+| keptn-auth | Auth settings for Keptn connection. Ignore when use 'keptn-kube' | `true`   | `'{"keptnURL": "", "token": ""}'`                                                                         |
+| keptn-kube | Kubernetes settings for connection to Keptn service.             | `true`   | `'{"enabled": false, "namespace": "keptn", "secret": "keptn-api-token", "service": "api-gateway-nginx"}'` |
 
-<!-- action-docs-inputs -->
-
-## Usage
+Usage
+-----
 
 Full flow:
 

@@ -5,6 +5,7 @@ inputs:
   config:
     description: "Config of desired projects/stages/services."
     required: true
+    default: ''
   keptn-auth:
     description: "Auth settings for Keptn connection. Ignore when use 'keptn-kube'"
     required: true
