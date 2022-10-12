@@ -1,30 +1,26 @@
 ![keptn](https://github.com/keptn/keptn/raw/master/assets/keptn.png)
 
-Keptn Provisioning
-==================
+# Keptn Provisioning
 
 ![License](https://img.shields.io/github/license/Moon1706/keptn-provisioning-gha)
 
 This repository contains the GitHub Actions, which create a Github repository and create/update [Keptn](https://keptn.sh/) projects/stages/services. All functions based on [this NPM package](https://github.com/Moon1706/keptn-provisioning-npm).
 
-Inputs
-------
+## Inputs
 
 | parameter  | description                                                      | required | default                                                                                                   |
-|------------|------------------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
+| ---------- | ---------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------- |
 | config     | Config of desired projects/stages/services.                      | `true`   | `""`                                                                                                      |
 | keptn-auth | Auth settings for Keptn connection. Ignore when use 'keptn-kube' | `true`   | `'{"keptnURL": "", "token": ""}'`                                                                         |
 | keptn-kube | Kubernetes settings for connection to Keptn service.             | `true`   | `'{"enabled": false, "namespace": "keptn", "secret": "keptn-api-token", "service": "api-gateway-nginx"}'` |
 
-Usage
------
+## Usage
 
 1. Make `shipyard.yaml`. [Official docs](https://keptn.sh/docs/0.8.x/manage/shipyard/) for helping.
 2. Make folder with service files (optional).
 3. Create workflow.
 
-Workflows
----------
+## Workflows
 
 Standard flow:
 

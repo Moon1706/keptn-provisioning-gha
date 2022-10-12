@@ -1,13 +1,8 @@
-name: develop
+name: default
 
 on:
-  pull_request:
-    branches: [develop]
-    paths-ignore:
-      - "README.md"
-      - "LICENSE"
   push:
-    branches: [develop]
+    branches: [main]
     paths-ignore:
       - "README.md"
       - "LICENSE"
