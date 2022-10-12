@@ -1,6 +1,6 @@
 {
   "name": "keptn-provisioning-gha",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "Apache License 2.0",
   "author": "Mikita Sharayeu <nick.moon.1705@gmail.com>",
   "repository": {
@@ -12,7 +12,7 @@
   "type": "commonjs",
   "scripts": {
     "default": "npm run clean && npm install && npm run fmt && npm run lint && npm run build",
-    "clean": "rm -rf node_modules dist",
+    "clean": "rm -rf node_modules dist package-lock.json",
     "fmt": "prettier --write .",
     "lint": "npx eslint .",
     "build": "tsc"
@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "@actions/core": "^1.9.0",
-    "keptn-provisioning": "1.1.0"
+    "keptn-provisioning": "1.1.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.0",
